@@ -1,0 +1,138 @@
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px; 
+  margin-top: 100px;
+  justify-items:center;
+}
+section.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 2px solid var(--accent-900);
+  h5{
+    text-align:end
+  }
+}
+ .imagen{
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+} 
+section.card h2 {
+  margin-top: 0;
+  text-align: center;
+  color: var(--accent-700);
+}
+.contenedor{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px; 
+}
+.contOfertas{
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 40px; 
+ padding: 40px;
+  max-width: 1200px;
+}
+
+  .card {
+    background: var(--card);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    width: 350px;           
+    min-height: 420px;     
+    margin-bottom: 30px;
+    border: 2px solid var(--accent-900);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.card img {
+    width: 100%;
+    height: 200px;       
+    object-fit: cover;   
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+}
+.contOfertas{
+  grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 467px) {
+ .productos {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  gap: 20px; 
+}
+}
+/*media q...........*/
+@media (max-width: 425px) {
+
+  .productos {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 40px;
+  }
+
+  .contenedor {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .contOfertas {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 25px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  section.card {
+    padding: 15px;
+  }
+}
+/*...................*/
+@media (max-width: 375px) {
+
+  .productos {
+    gap: 20px;
+  }
+
+  .card {
+    max-width: 300px;
+    padding: 14px;
+  }
+
+  .card img {
+    height: 160px;
+  }
+
+  section.card {
+    padding: 12px;
+  }
+}
